@@ -53,8 +53,4 @@ For questions, suggestions, or any kind of discussion, feel free to open an issu
 
 Embrace the simplification of Python automation with `nlp2fn`.
 
-## Events
-
-- Langchain Automations : https://github.com/dextrop/evt-langchain
-
 
