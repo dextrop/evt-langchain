@@ -26,7 +26,7 @@ pip install -r requirements.txt
 ```shell
 nlp2fn set source events 
 ```
-**make sure you are inside `evt-langchain` clone dirtectory before running the above command
+**make sure you are inside `evt-langchain` clone dirtectory before running the above command**
 
 ## Start using
 
