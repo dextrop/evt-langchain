@@ -1,0 +1,8 @@
+venv/
+.idea/
+.DS_Store
+*/.DS_Store
+tests/
+test.py
+main.py
+*.pyc
