@@ -60,7 +60,44 @@ Yes, I can! :)
 Ask a query >>
 ```
 
-You can ask the chatbot any question you like.
+#### 2. Analyse CSV
+The event help use to take any CSV as input and can analyse data based on the information.
+To run type
+
+```nlp2fn exec -m "Analyse data from /Users/jennie/Downloads/SoundAuthUsers-Sheet1.csv"```
+
+**output**
+```shell
+Statement: Analyse data from /Users/jennie/Downloads/SoundAuthUsers-Sheet1.csv
+Executing: Analyse data from {csv_file_path}
+
+Welcome, The event uses OpenAI with langchain to answer all your query.
+To start you need to enter Open AI Key.
+To Obtain an Open AI key, go to https://platform.openai.com/account/api-keys
+Signup if you dont have an account, else login.
+ 
+
+Enter you open ai key >> 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
+Ask Query >> list all columns    
+
+
+> Entering new AgentExecutor chain...
+Thought: I need to find out what columns are in the dataframe
+Action: python_repl_ast
+Action Input: df.columns
+Observation: Index(['Type', 'Email', 'Timestamp'], dtype='object')
+Thought: I now know the final answer
+Final Answer: Type, Email, Timestamp
+
+> Finished chain.
+Type, Email, Timestamp
+Ask Query >> exit
+
+The project is created for fun purpose, Read more about the project at
+        https://github.com/dextrop/eventlangchain
+
+If you have any feedback you can mail us on saurabh@ask-jennie.com
+```
 
 ## Join the Development
 
@@ -71,3 +108,6 @@ We welcome contributions from the community! Feel free to submit pull requests a
 For questions, suggestions, or any kind of discussion, feel free to open an issue on our GitHub page.
 
 Embrace the simplification of Python automation with `nlp2fn`.
+
+
+
